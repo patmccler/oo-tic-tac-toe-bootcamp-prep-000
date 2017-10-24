@@ -49,9 +49,9 @@ class TicTacToe
   end
 
   def turn
-      good_move = 0
+      good_move = false
 
-      until good_move > 0
+      until good_move
       puts "Choose a move by entering 1-9"
       input = gets.strip
       index = input_to_index(input)
