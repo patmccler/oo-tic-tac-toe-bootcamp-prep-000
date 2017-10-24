@@ -45,16 +45,16 @@ class TicTacToe
   end
 
   def current_player
-    turn_count % 2 == 0 ? "X" : "0"
+    turn_count % 2 == 0 ? "X" : "O"
   end
 
   def turn
-      #until good_move
+      until good_move
       puts "Choose a move by entering 1-9"
       input = gets.strip
       index = input_to_index(input)
       good_move = valid_move(index)
-    #end
+    end
       move(index, current_player)
       display_board
   end
