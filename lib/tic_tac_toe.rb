@@ -29,7 +29,7 @@ class TicTacToe
     input.between?(1,9) ? input - 1 : -1
   end
 
-  def position_taken?(index, board = @board)
+  def position_taken?(index)
     !(board[index] == " " || board[index] == "" || board[index].nil?)
   end
 
@@ -49,9 +49,9 @@ class TicTacToe
   end
 
   def turn
-      good_move = nil
+      good_move = 0
 
-      until good_move
+      until good_move > 0
       puts "Choose a move by entering 1-9"
       input = gets.strip
       index = input_to_index(input)
