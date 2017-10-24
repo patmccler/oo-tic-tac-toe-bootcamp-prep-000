@@ -30,7 +30,7 @@ class TicTacToe
   end
 
   def position_taken?(index)
-    true unless @board[index].nil || @board[index] == " "
+    true unless @board[index].nil || @board[index] == 1
   end
 
   def valid_move?(index)
