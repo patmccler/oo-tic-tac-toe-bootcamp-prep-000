@@ -33,10 +33,15 @@ class TicTacToe
     !(board[index] == " " || board[index] == "" || board[index].nil?)
   end
 
+=begin
   def valid_move?(index)
     !position_taken?(index) && index.between?(0,8)
   end
-
+=end
+  def position_taken?(board, location)
+    board[location] != " " && board[location] != ""
+  end
+  
   def turn_count
     used_squares = @board.reject do |position|
       position == "" || position == " " || position.nil?
