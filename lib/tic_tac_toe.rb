@@ -89,7 +89,7 @@ class TicTacToe
     #winner = won? ? @board[winner[0]] : winner
     winner = won?
     if(winner)
-      return board[winner[0]]]
+      return board[winner[0]]
     else
       return nil
     end
