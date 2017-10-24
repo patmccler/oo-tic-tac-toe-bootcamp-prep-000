@@ -96,6 +96,10 @@ class TicTacToe
       turn
     end
 
+    winner = won?
+
+    winner ? puts "Congragulations #{@board[winner[0]]}" : puts "Cat's Game!"
+
 
 
   end
