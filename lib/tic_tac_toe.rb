@@ -30,7 +30,7 @@ class TicTacToe
   end
 
   def position_taken?(index)
-    !(@board[index].nil? || @board[index] == " " || @board[index] == "")
+    @board[index].nil? || @board[index] == " " || @board[index] == ""
   end
 
   def valid_move?(index)
@@ -50,7 +50,7 @@ class TicTacToe
 
   def turn
       good_move = nil
-      
+
       until good_move
       puts "Choose a move by entering 1-9"
       input = gets.strip
