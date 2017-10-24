@@ -27,7 +27,7 @@ class TicTacToe
     input.between?(1,9) ? input - 1 : -1
   end
 
-  position_taken?(index)
+  def position_taken?(index)
     !(@board[index].nil? || @board[index] == " " || @board[index] == "")
   end
 
@@ -81,9 +81,9 @@ class TicTacToe
     draw? || won?
   end
 
-  #def winner
-  #  winner = won? ? @board[winner[0]] : winner
-#  end
+  def winner
+    winner = won? ? @board[winner[0]] : winner
+  end
 
 
 
