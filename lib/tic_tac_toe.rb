@@ -98,7 +98,7 @@ class TicTacToe
 
     victor = winner
 
-    puts victor ? "Congragulations #{@board[winner[0]]}" : "Cat's Game!"
+    puts victor ? "Congragulations #{@board[victor[0]]}" : "Cat's Game!"
 
 
 
