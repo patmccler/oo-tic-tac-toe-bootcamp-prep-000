@@ -30,7 +30,7 @@ class TicTacToe
   end
 
   def position_taken?(index)
-    #!(@board[index].nil? || @board[index] == " " || @board[index] == "")
+    !(@board[index].nil? || @board[index] == " " || @board[index] == "")
   end
 
   def valid_move(index)
@@ -41,7 +41,7 @@ class TicTacToe
     used_squares = @board.reject do |position|
       position == "" || position == " " || position.nil?
     end
-    turn_count.size
+    used_squares.size
   end
 
   def current_player
