@@ -88,14 +88,6 @@ class TicTacToe
   def winner
     winner = won?
     winner ? @board[winner[0]] : winner
-=begin
-    winner = won?
-    if(winner)
-      return @board[winner[0]]
-    else
-      return nil
-    end
-=end
   end
 
 
