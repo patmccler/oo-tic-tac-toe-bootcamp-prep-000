@@ -49,6 +49,7 @@ class TicTacToe
   end
 
   def turn
+      good_move = nil
       until good_move
       puts "Choose a move by entering 1-9"
       input = gets.strip
