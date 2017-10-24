@@ -39,9 +39,9 @@ class TicTacToe
   end
 
   def position_taken?(location)
-    @board[location] != " " && @board[location] != ""
+    @board[location] != " " || @board[location] != ""
   end
-  
+
   def turn_count
     used_squares = @board.reject do |position|
       position == "" || position == " " || position.nil?
