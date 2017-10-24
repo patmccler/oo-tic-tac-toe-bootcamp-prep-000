@@ -11,7 +11,9 @@ class TicTacToe
     [6,7,8], #bot row
     [0,3,6], #left col
     [1,4,7], #mid col
-    [2,4,8] #bot col
+    [2,4,8], #bot col
+    [0,4,8], #top left to bot right
+    [2,4,6]  #top right to bot left
     ]
 
   def display_board
