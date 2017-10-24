@@ -28,18 +28,13 @@ class TicTacToe
     input = input.to_i
     input.between?(1,9) ? input - 1 : -1
   end
-=begin
+
   def position_taken?(index, board = @board)
     !(board[index] == " " || board[index] == "" || board[index].nil?)
   end
-=end
 
   def valid_move?(index)
     !position_taken?(index) && index.between?(0,8)
-  end
-
-  def position_taken?(location)
-    @board[location] != " " || @board[location] != ""
   end
 
   def turn_count
