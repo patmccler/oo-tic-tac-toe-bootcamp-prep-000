@@ -90,6 +90,14 @@ class TicTacToe
     winner ? @board[winner[0]] : winner
   end
 
+  def play
 
+    while !over?
+      turn
+    end
+
+
+
+  end
 
 end
