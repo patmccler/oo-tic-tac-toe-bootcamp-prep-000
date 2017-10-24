@@ -80,9 +80,9 @@ class TicTacToe
     draw? || won?
   end
 
-  def winner
-    winner = won? ? @board[winner[0]] : winner
-  end
+  #def winner
+  #  winner = won? ? @board[winner[0]] : winner
+#  end
 
 
 
