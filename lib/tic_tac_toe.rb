@@ -66,4 +66,24 @@ class TicTacToe
     end
   end
 
+  def full?
+    @board.none? do |pos|
+      pos == "" || pos == " " || pos.nil?
+    end
+  end
+
+  def draw?
+    full? && !won?
+  end
+
+  def over?
+    draw? || won?
+  end
+
+  def winner
+    winner = won? : @board[winner[0]] : nil
+  end
+
+  
+
 end
