@@ -51,7 +51,7 @@ class TicTacToe
       puts "Choose a move by entering 1-9"
       index = input_to_index(gets.strip)
       good_move = valid_move(index)
-    end    
+    end
       move(index, current_player)
       display_board
   end
@@ -62,7 +62,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.detect do |win_con|
-      @board[win_con[0]] == @board[win_con[0] && @board[win_con[0]]== @board[win_con[0]] && position_taken?(@board[win_con[0]])
+      @board[win_con[0]] == @board[win_con[1] && @board[win_con[1]]== @board[win_con[2]] && position_taken?(@board[win_con[0]])
     end
   end
 
