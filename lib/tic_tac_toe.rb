@@ -29,8 +29,8 @@ class TicTacToe
     input.between?(1,9) ? input - 1 : -1
   end
 
-  def position_taken?(index)
-    !(@board[index.to_i] == " " || @board[index.to_i] == "" || @board[index.to_i].nil?)
+  def position_taken?(index, board = @board)
+    !(board[index] == " " || board[index] == "" || board[index].nil?)
   end
 
   def valid_move?(index)
